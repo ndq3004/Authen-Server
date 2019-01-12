@@ -1,0 +1,5 @@
+package MISA.SME.auth.config;
+
+public class OAuth2AuthorizationConfig {
+
+}

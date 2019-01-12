@@ -1,0 +1,12 @@
+package MISA.SME.Service.Security;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import MISA.SME.repository.UserRepository;
+
+public class SqlUserDetailsService implements UserDetailsService{
+
+	@Autowired
+	private UserRepository repository;
+}

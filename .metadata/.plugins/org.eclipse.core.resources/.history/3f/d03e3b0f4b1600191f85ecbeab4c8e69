@@ -1,0 +1,14 @@
+package MISA.SME.auth.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.access.AuthorizationServiceException;
+
+@Configuration
+@EnableAuthozirationServer
+public class OAuth2AuthorizationConfig extends AuthorizationServerConfigurerAdapter{
+	
+	private TokenStore tokenStore = new InMemoryTokenStore();
+	private final String NOOP_PASSWORD_ENCODE = "{noop}";
+	
+	@Autowired
+}
